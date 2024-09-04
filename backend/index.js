@@ -6,13 +6,19 @@ app.use(express.json({ extended: false }));
 
 app.get("/", (req, res) => {
   res.status(200).json({
-    "msg": "Route / in Backend"
+    msg: "Route / in Backend"
   })
 })
 
-app.get("/test", (req, res) => {
+app.get("/api/test", (req, res) => {
   res.status(200).json({
-    "msg": "Route /test in backend"
+    msg: "Route /api/test in backend"
+  })
+})
+
+app.get("/api/hello", (req, res) => {
+  res.status(200).json({
+    msg: "Route /api/hello in backend"
   })
 })
 
