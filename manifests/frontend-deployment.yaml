@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deploy
+  labels:
+    app: frontend-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: frontend-pod
+  template:
+    metadata:
+      name: frontend-pod
+      labels:
+        app: frontend-pod
+    spec:
+      containers:
+      - name: frontend-container
+        image: your-frontend-image
+        ports:
+        - containerPort: 80
