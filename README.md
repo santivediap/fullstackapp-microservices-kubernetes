@@ -348,11 +348,11 @@ spec:
 
 We now have the necessary resources to deploy our fullstack app on Kubernetes! 🥳
 
-> First of all, lets's verify everything is okay running `kubectl get all`. It should appear this
+> First of all, let's verify everything is okay running `kubectl get all`. It should appear this
 
 ![kubernetes-first-preview.png](/assets/kubernetes-first-preview.png "kubernetes-first-preview.png")
 
-> Now, to create our backend dpeloyment, lets run `kubectl apply -f backend-deployment.yaml`
+> Now, to create our backend deployment, let's run `kubectl apply -f backend-deployment.yaml`
 >
 > The output should be `deployment.apps/backend-deploy created`
 >
