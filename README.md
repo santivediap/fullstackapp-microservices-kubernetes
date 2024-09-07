@@ -403,3 +403,5 @@ We now have the necessary resources to deploy our fullstack app on Kubernetes! �
 > I hope you find this helpful! If you want to add useful info or good practices, feel free to make a pull request 😁
 >
 > __HAPPY CODING!__ 🤩
+
+PD: I accidentally set another image on my deployment while taking the pictures so you will see the pods are named different. Don't worry, It should work fine
