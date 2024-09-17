@@ -16,9 +16,7 @@ function App() {
     e.preventDefault()
 
     try {
-      // Did this so client will request to /api/test instead of //api/test (for example) in backend when proxy is set on NGINX
-      const charIndex = input.indexOf("/", input.indexOf("/") + 1)
-      const backendRequest = await axios.get(input.substring(0, charIndex) + input.substring(charIndex + 1))
+      const backendRequest = await axios.get(input)
       setResult(backendRequest.data.msg)
       
     } catch(err) {
